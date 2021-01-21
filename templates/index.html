@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <Title>Women Force Labor rate predication</Title>
+</head>
+<body id="main" style="background-color: black; color: yellow;">
+    <div style="justify-content: center; text-align: center;">
+        <h1>Women Force Labor rate Machine learning predication </h1>
+    </div>
+    <br>
+    <div style="justify-content: center; ">
+    <h3>Welcome to predication for Women Force Labor rate Machine Learning predication. Enter values below and get result</h3>
+    </div>
+    <div>
+    </div>
+    <div style="justify-content: center; text-align: center; color: aqua;">
+        <form action="{{ url_for('prediction')}}" method="post">
+            <h4>Enter name of country</h4>
+            <input id="first" name="country" placeholder="Name of country Here" type="text">
+           <h4>Is country developer or under developed</h4><select name="country_developed" id="developed" required="required">
+                <option value="developed">Developed</option>
+                <option value="undereveloped">Under Developed</option>
+            </select>
+            <h4>Is county European Union Member</h4><select name="europe" id="member" required="required">
+                <option value="member">Member</option>
+                <option value="notmember">Not a Member</option>
+            </select>
+            <h4>Enter Entrepreneurship Index</h4>
+            <input id="first" name="entrepreneurship" placeholder="Entrepreneurship Index here" type="number ">
+            <h4>Enter Inflation rate</h4>
+            <input id="first" name="inflation" placeholder="Inflation rate here" type="number ">
+            <br><br><button id="sub" type="submit " style="color: red;">Calculate</button>
+            <br>
+        </form>
+        <br><br><h3 id="output1" style="color: orange;">{{ prediction_text }}<h3>
+        <h3 id="output2" style="color: orange;">{{ prediction_text2 }}<h3>
+    </div>
+    <div style="text-align: center; color: white;"> Developed by:-Muhammad Hasnain</div>
+    <script>
+        if (document.getElementById('output2').textContent=='high force labor rate'){
+            document.getElementById('output1').setAttribute('style','background-color:red')
+            document.getElementById('output2').setAttribute('style','background-color:red')
+            
+        }
+        if (document.getElementById('output2').textContent=='not too high force labor rate'){
+            document.getElementById('output1').setAttribute('style','background-color:green')
+            document.getElementById('output2').setAttribute('style','background-color:green')
+        }
+    </script>
+</body>
