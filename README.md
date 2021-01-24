@@ -1,4 +1,4 @@
-# Women-Enterpnership-predication-and-deployment-by-flask
+# Women-Force labor rate-predication-and-deployment-by-flask
 Predicated Women Force Labor rate 
 First of all imported data set in the project
 Then visulize data and understand it by differnt functions of pandas for understanding and matplotlib for visulization
