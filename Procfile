@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run iris_webapp.py
+web: gunicorn wsgi:app
