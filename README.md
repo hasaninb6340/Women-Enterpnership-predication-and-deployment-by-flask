@@ -23,7 +23,7 @@ For predication use linear regression and predicated force labor rate.
 Then use pickle to save model
 # Flask
 import same model in flask and apply all the step that are performed in above use case
-# index.html
+# # index.html
 At end render index.html
 index.html is placed in templates folder
 
