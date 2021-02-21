@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 27 23:20:28 2020
-
-@author: M.Hasnain Baloch
-"""
-
-
-  
 from flask import Flask, render_template, request
 import jsonify
 import requests
@@ -42,7 +33,8 @@ def prediction():
             Member=1
         else:
             Member=0
-      
+        Index=(Index-24.8)/52.8
+        rate=(rate+2.25)/28.75
         model = pickle.load(open('model.pkl', 'rb'))
         prediction=model.predict([[Index,rate,Developement,Member]])
         output=round(prediction[0],2)
@@ -54,5 +46,3 @@ def prediction():
 
 if __name__=="__main__":
     app.run(debug=True)
-
-
