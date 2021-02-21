@@ -14,7 +14,7 @@ In next step check for outliers in data and remove it.An outlier is a data point
 # dummy variables for categorical data
 Then use dummy variables for categorical data and convert it to 0 and 1.
 # remove variable with high coorelaetion with each other
-After this we check and remove variable with high coorelaetion. For that purpose use the function of df.corr()and seborn for analyssi of correlation.
+After this we check and remove variable with high coorelaetion. For that purpose use the function of df.corr()and seborn for analysis of correlation.
 # train test split 
  Firt convert data into X and y variable.In next step split data into testing and training data by train test split.
  # Modeling
@@ -23,7 +23,22 @@ For predication use linear regression and predicated force labor rate.
 Then use pickle to save model
 # Flask
 import same model in flask and apply all the step that are performed in above use case
-# # index.html
+# index.html
 At end render index.html
 index.html is placed in templates folder
+# Deployment
+The model is deployed on heroku server. For deveployment create a new app on server and then a pipeline in the server and connect repositry of github to that pipeline.
+# website link
+https://women-force-labor-rate-machine.herokuapp.com/
+# Tools used
+Flask
+Numpy
+Pandas
+seaborn
+matplotlib
+Sklearn
+Pickle
+Jsonfiy
+Herkou
+
 
